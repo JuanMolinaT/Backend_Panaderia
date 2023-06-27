@@ -1,4 +1,4 @@
-import mongoose from "mongoose"; //se importa para acceder a las capas de mongoose
+import mongoose from "mongoose"; //se importa para acceder a las capas de mongose
 
 const clienteSchema = mongoose.Schema(
  {
@@ -15,7 +15,7 @@ const clienteSchema = mongoose.Schema(
         required: true,
         default: Date.now(),
     },
-    producto:{
+    producto:{ 
         type: String,
         required: true,
     },
