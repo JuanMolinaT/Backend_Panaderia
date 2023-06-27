@@ -1,4 +1,4 @@
-import mongoose from "mongoose"; //se importa para acceder a las capas de mongose
+import mongoose from "mongoose"; //Se importa para acceder a las capas de mongose
 
 const clienteSchema = mongoose.Schema(
  {
