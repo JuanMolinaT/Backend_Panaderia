@@ -5,7 +5,7 @@ import panaderoEndPoints from './api/panaderoEndpoints.js';
 import clienteEndpoints from './api/clienteEndpoints.js';
 
 const app = express();
-app.use(express.json()); //habilito para que se resiva informa tipo json
+app.use(express.json()); //habilito para que se resiva informa tipo json desde el frontend
 dotenv.config();
 conectarDB();
 const PORT = process.env.PORT || 4000;
