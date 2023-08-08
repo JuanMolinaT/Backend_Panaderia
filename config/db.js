@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 
 const conectarDB = async () => {
     try {                                                       //nombre del clouter                nombre de la base
-        const db= await mongoose.connect('mongodb+srv://root:root@datapanaderia.4owbl3o.mongodb.net/panaderia?retryWrites=true&w=majority',{
+        const db= await mongoose.connect(process.env.MONGO_URI,{
             useNewUrlParser: true,
             useUnifiedTopology: true
         })
